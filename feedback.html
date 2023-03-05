@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- navbar start  -->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="position:sticky; top:0px; z-index:2;">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-3" href="#">MARVELZ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-3">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+
+            <li class="nav-item me-3">
+              <a class="nav-link active" href="#">FeedBack</a>
+            </li>
+
+            <li class="nav-item me-3">
+                <a class="nav-link active" href="#lmovies">Latest</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end  -->
+
+    <!-- form start  -->
+    <div class="container-fluid">
+        <div class="row my-2 mt-4">
+            <div class="col-md-12 text-center">
+                <h3 data-aos="slide-down" data-aos-duration="1000" data-aos-easing="ease-in-out">Feedback</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-7 mb-3">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email <span class="me">address</span></label>
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="query" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2" style="color:rgb(0, 0, 29)">Write your <span class="text-dark">Feedback</span> Here</label>
+                    </div>
+                    <center><button onclick="check()" type="button" class="btn text-white">Submit</button></center>
+                </form>
+            </div>
+        </div>
+    <!-- form ends  -->
+
+    <!-- latest  -->
+    <div class="row my-2 mt-5" id="lmovies">
+        <div class="col-md-12 text-center">
+            <h3 data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out">Latest Movies</h3>
+        </div>
+    </div>
+
+    <div class="row justify-content-evenly mt-2">
+        <div class="col-md-2 rounded-4 py-2 mb-4 shadow">
+          <center><img src="./images/wakanda.jpg" class="img-fluid rounded-3 mb-2" id="image"></center>
+          <center><h5 class="mb-3">Black Panther:Wakanda Forever</h5></center>
+          <center><a href="https://moviesjoy.plus/watch-movie/watch-black-panther-ii-66672.9148009" target="_blank"><div class="btn rounded-pill text-white">Watch Now</div></a></center>
+        </div>
+
+        <div class="col-md-2 rounded-4 py-2 mb-4 shadow">
+            <center><img src="./images/quantum.jpg" class="img-fluid rounded-3 mb-2" id="image"></center>
+            <center><h5 class="mb-3">AntMan and The Wasp:Quantumania</h5></center>
+            <center><a href="https://moviesjoy.plus/watch-movie/watch-ant-man-and-the-wasp-quantumania-89518.9370384" target="_blank"><div class="btn rounded-pill text-white">Watch Now</div></a></center>
+          </div>
+
+        <div class="col-md-2 rounded-4 py-2 mb-4 shadow">
+            <center><img src="./images/doctor.jpg" class="img-fluid rounded-3 mb-2" id="image"></center>
+            <center><h5 class="mb-3">Doctor Strange in the Multiverse of Madness</h5></center>
+            <center><a href="https://moviesjoy.plus/watch-movie/watch-doctor-strange-in-the-multiverse-of-madness-66671.8297842" target="_blank"><div class="btn rounded-pill text-white">Watch Now</div></a></center>
+        </div>
+
+        <div class="col-md-2 rounded-4 py-2 mb-4 shadow">
+            <center><img src="./images/tlt.jpg" class="img-fluid rounded-3 mb-2" id="image"></center>
+            <center><h5 class="mb-3">Thor:Love and Thunder</h5></center>
+            <center><a href="https://moviesjoy.plus/watch-movie/watch-thor-love-and-thunder-66670.8737510" target="_blank"><div class="btn rounded-pill text-white">Watch Now</div></a></center>
+        </div>
+    </div>
+    <!-- latest ends  -->
+
+      <!-- footer start  -->
+      <hr>
+      <div class="row text-center mb-2">
+        <footer class="footer">
+          <div>
+              Copyright &#169; Marvelz 2023. All Right Reserved.
+          </div>
+          <div>
+              Developed by Haamid Raza Kazi.
+          </div>
+        </footer>
+      </div>
+      <!-- footer ends  -->
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({once:"true"});
+    </script>
+    <script src="./feedback.js"></script>
+  </body>
+</html>
